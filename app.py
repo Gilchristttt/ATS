@@ -112,7 +112,7 @@ def main():
             
             afficher_recommandations(score_competences)
         
-        if score_competences >0.8 :
+        if score_competences >0.5 :
             generer_lettre = st.selectbox(
                 "Souhaitez-vous générer une lettre de motivation ?",
                 options=["Non", "Oui"]
