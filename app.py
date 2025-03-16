@@ -105,7 +105,7 @@ def main():
             competences_post = [c for c in info_cv['competences'] if c in info_offre['competences']]
             if len(competences_post) >=1:
                 st.write("### 🛠️ Compétences que vous possédez pour ce poste :")
-                st.write("- " + "\n- ".join(info_cv['competences']))
+                st.write("- " + "\n- ".join(competences_post))
             else:
                 st.write("❌ Aucune compétence correspondante trouvée dans votre CV.")
                 
